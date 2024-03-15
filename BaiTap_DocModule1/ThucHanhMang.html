@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [1, 7, 5, 9, 2, 6];
+
+    let sumChan = 0;
+    let sum10 = 0;
+    let sumChia7du2 = 0;
+    let maxMang = 0;
+    let maxMangChan = 0;
+    let sumChiaHet5 = 0;
+    let countChiaHet5 = 0;
+    // console.log(array); // In ra các phần tử trong mảng
+
+    // for (let i = 0; i < array.length; i++) {
+    //     if (array[i] % 2 === 0) {
+    //         // In ra các phần tử chẵn trong mảng
+    //         sumChan += array[i];
+    //         console.log("Số chẵn" + array[i]);
+    //     }
+    //     if (i % 2 === 0) {
+    //         // - In ra các phần tử tại vị trí chẵn trong mảng
+    //         console.log("Phần tử vị trí chẵn" + array[i]);
+    //     }
+    //     if (array[i] > 10) {
+    //         // In ra tổng các phần tử >10 trong mảng
+    //         console.log("");
+    //         sum10 += array[i];
+    //     }
+    //     if (array[i] % 7 === 2) {
+    //         // In ra tổng các phần tử chia 7 dư 2 trong mảng
+    //         sumChia7du2 += array[i];
+    //     }
+    //     if (maxMang <= array[i]) {
+    //         // Max của mảng
+    //         maxMang = array[i];
+    //     }
+    //     if (array[i] >= maxMangChan && array[i] % 2 === 0) {
+    //         // max cuar mang thanh phan chan
+    //         maxMangChan = array[i];
+    //     }
+    //     if (array[i] % 5 === 0) {
+    //         console.log("Phần tử chia hết cho 5: " + array[i]);
+    //         sumChiaHet5 += array[i];
+    //         countChiaHet5++;
+    //     }
+    //     if (array[i] > 2){
+    //         console.log("Phần tử lớn hơn 2 là " + array[i] + "Tại vị trí" + i);
+    //     }
+    // console.log("Tổng của các phần tử chẵn trong mảng : " + sumChan);
+    // console.log("Tổng của các phần tử lớn hơn 10 trong mảng : " + sum10);
+    // console.log("Tổng của các phần tử chia 7 dư 2 trong mảng : " + sumChia7du2);
+    // console.log("max cuả mang là : " + maxMang);
+    // console.log("max cuả mang chan là : " + maxMangChan);
+    // console.log("Trung binhf phần tử chia hết cho 5 là:  " + sumChiaHet5 / countChiaHet5);
+
+    console.log(array)
+    for (j = 0; j < array.length - 1; j++) {
+        if (array [j] > array[j + 1]) {
+            let dump = array[j]; // 7
+            array [j] = array[j + 1]; // 5
+            array[j + 1] = dump;
+            j = -1;
+        }
+    }
+    console.log(array)
+    console.log(array.length - 1)
+
+</script>
+</body>
+</html>

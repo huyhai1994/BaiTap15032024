@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Array = [1, 7, 5, 9, 2, 6, 7, 9, 7];
+    // I+ In ra các phần tử trong mảng.
+    console.log(Array);
+    // + In ra các phần tử chẵn trong mảng.
+    for (let i = 0; i < Array.length - 1; i++) {
+        if (Array[i] % 2 === 0) {
+            console.log("Phan tu chia het cho 2 la : " + Array[i] + "tại vị trí: " + i);
+        }
+    }
+    let UserInputNumber = +prompt("Nhập số cần tìm trong mảng:  ");
+    let Count = 0;
+    for (let i = 0; i < Array.length - 1; i++) {
+        if (UserInputNumber === Array[i]) {
+            Count++;
+        }
+    }
+    if (Count !== 0) {
+        console.log("Số " + UserInputNumber + "Xuất hiện " + Count + "lần");
+    } else {
+        console.log("Số " + UserInputNumber + " Không Xuất hiện");
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    array = [1,2,3,4,5,12,65,7,2,8,7,12];
+    console.log(array)
+    for (j = 0; j < array.length - 1; j++) {
+        if (array [j] < array[j + 1]) {
+            let dump = array[j]; // 7
+            array [j] = array[j + 1]; // 5
+            array[j + 1] = dump;
+            j = -1;
+        }
+    }
+    console.log(array)
+</script>
+</body>
+</html>

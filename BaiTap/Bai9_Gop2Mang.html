@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Array_A = [1, 2, 3, 4, 5, 3, 6, 7, 3, 5];
+    let Array_B = [4, 5, 7, 2, 7, 5, 3, 1, 6, 7];
+    let Array_C = [20];
+    let Length_Array_A = Array_A.length;
+    let Length_Array_B = Array_B.length;
+    let Length_Array_C = Length_Array_A + Length_Array_B;
+    for (let i = 0, j = 10; i < Length_Array_A;) {
+        Array_C[i] = Array_A[i];
+        Array_C[j] = Array_B[i];
+        i++
+        j++;
+    }
+    console.log(Array_C)
+</script>
+</body>
+</html>

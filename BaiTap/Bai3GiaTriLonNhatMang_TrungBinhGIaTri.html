@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [1, 5, 3, 5, 6, 3, 4, 6];
+    let max = array[0];
+    let countElement = 0;
+    let sumElement = 0;
+    for (let i = 0; i < array.length - 1; i++) {
+        if (array[i] >= max) {
+            max = array[i];
+        }
+        countElement++;
+        sumElement += array[i];
+    }
+    console.log("Giá trị max đó là : " + max);
+    console.log("Giá trị tb đó là : " +  sumElement /countElement);
+
+</script>
+</body>
+</html>

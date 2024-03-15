@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let CountNumbersGreaterThan10 = 0;
+    let ArrayNumbers = [1, 33333, 90, 6, 44, 13, 7, 3, 4, 555];
+    let DummyMaxNumber = ArrayNumbers[0];
+    let LocationIndex;
+    for (i = 1; i < ArrayNumbers.length; i++) {
+        if (ArrayNumbers[i] > DummyMaxNumber) {
+            DummyMaxNumber = ArrayNumbers[i];
+            LocationIndex = i;
+        }
+    }
+    let FinalMaxNumber = DummyMaxNumber;
+
+    console.log("Số lớn nhất  là: " + FinalMaxNumber +
+        " Tại vị trí " + LocationIndex + "/ " +(ArrayNumbers.length-1) );
+
+</script>
+</body>
+</html>

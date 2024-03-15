@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [10, 2, 3, 4, 6, 7, 8, 9];
+    // console.log(array);
+    let index1 = 0;
+    let indexlast = array.length - 1;
+    while (index1 < indexlast) {
+        let temp = array[index1];
+        array [index1] = array[indexlast];
+        array[indexlast] = temp;
+        index1 ++;
+        indexlast--;
+    }
+    console.log(array);
+
+</script>
+</body>
+</html>

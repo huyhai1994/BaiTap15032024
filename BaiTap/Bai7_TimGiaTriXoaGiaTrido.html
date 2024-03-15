@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let i, j;
+    let array = [1, 5, 8, 9, 10, 111, 6, 3, 2, 99, 4];
+    let FindNumber = 111;
+    for (i = 0; i < array.length - 1; i++) {
+        if (array[i] === FindNumber) {
+            for (j = i; j < array.length - 1; j++) {
+                array [j] = array[j + 1];
+            }
+            array[j] = 0;
+            break;
+        }
+    }
+    console.log(array);
+</script>
+</body>
+</html>
